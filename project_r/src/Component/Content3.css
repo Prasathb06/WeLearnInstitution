@@ -1,0 +1,44 @@
+.VM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.content3_card {
+    max-width: 800px;
+    background-color: #1B201C;
+    border: none;
+    font-size: 20px;
+    overflow: hidden;
+    
+    column-gap: 80px;
+}
+
+.content3_text {
+    padding: 20px;
+    text-align: center;
+}
+
+.content3_text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.content3_text div p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .content3_card {
+        width: 100%;
+        margin: 10px;
+    }
+}

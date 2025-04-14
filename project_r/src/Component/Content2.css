@@ -1,0 +1,123 @@
+.box {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #1A1F1B;
+    height: 300px;
+}
+
+.cards {
+    display: flex !important;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card1 {
+    background: transparent;
+    border: none;
+    border-right: 1px solid white;
+    border-radius: 0%;
+    color: white;
+    padding-top: 10px;
+}
+
+.font{
+ font-size: 15px;
+}
+
+.card2 {
+    background: transparent;
+    border: none;
+    border-right: 1px solid white;
+    border-radius: 0%;
+    color: white;
+    padding-top: 10px;
+}
+
+.card3 {
+    background: transparent;
+    border: none;
+    border-right: 1px solid white;
+    border-radius: 0%;
+    color: white;
+    padding-top: 10px;
+}
+
+.card4 {
+    background: transparent;
+    border: none;
+    color: white;
+    padding-top: 10px;
+}
+
+.title{
+    color: #7DFC00;
+}
+
+.why{
+    margin-left: 90px;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.Price{
+    margin-left: 90px;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.Time{
+    margin-left: 90px;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.Training{
+    margin-left: 90px;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .box{
+        height: 500px;
+    }
+
+    .cards{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+    .card1 {
+        border: none;
+    }
+    .card2 {
+        border: none;
+    }
+    .card3 {
+        border: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .box{
+        height:100%;
+        width: 300px;
+    }
+
+    .cards{
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+
+    .card1 {
+        border: none;
+    }
+    .card2 {
+        border: none;
+    }
+    .card3 {
+        border: none;
+    }
+}

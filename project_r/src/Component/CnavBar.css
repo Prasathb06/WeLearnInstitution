@@ -1,0 +1,27 @@
+.nav-tabs .nav-item .nav-link {
+    background-color: #0f1011; 
+    color: white;
+    padding: 10px 20px; 
+    border: 1px solid #495057; 
+    border-radius: 5px; 
+    margin: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+  
+  .nav-tabs .nav-item .nav-link:hover {
+    background-color: #495057; 
+    color: #fff; 
+    text-decoration: none; 
+  }
+  
+  .nav-tabs .nav-item .nav-link.active {
+    background-color: #4CAF50; 
+    border-color: black; 
+    color: white; 
+  }
+  
+  .nav-tabs {
+    border-bottom: none; 
+  }
+  

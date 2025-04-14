@@ -1,0 +1,55 @@
+/* ProductCreation.css */
+
+.addProduct {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 40px;
+    width: 500px;
+  }
+  
+  .productForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .productForm h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .productForm input[type="text"],
+  .productForm input[type="number"],
+  .productForm input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .productForm input[type="file"] {
+    padding: 5px;
+  }
+  
+  .productForm .inpt-files {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .productForm button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .productForm button:hover {
+    background-color: #0056b3;
+  }
+  

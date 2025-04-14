@@ -1,0 +1,59 @@
+.Alog {
+    background-image: url("../images/Backgroundimg/full-stack-developer-freelance-projects.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 590px;
+    width: auto;
+  }
+  
+  .Aform1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    backdrop-filter: blur(1rem);
+    border: 1px solid;
+    width: 400px;
+    border: none;
+    height: 450px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    box-shadow: 5px 5px 2px black;
+  }
+  
+  .Abtn-1 {
+    text-align: center;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    background-color: blue;
+    color: white; 
+    margin-bottom: 60px !important;
+    font-size:20px !important;
+  }
+  
+  .Auser {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+  }
+  
+  .Apass {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+   
+  }
+  
+  .headerL {
+    text-align: center;
+    color: #7DFC00 !important;
+   
+  }

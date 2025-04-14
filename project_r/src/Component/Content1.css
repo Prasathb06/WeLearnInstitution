@@ -1,0 +1,69 @@
+.Post
+{
+background-image: url("../images/Backgroundimg/full-stack-developer-freelance-projects.webp");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+height:580px;
+}
+
+.container1
+{
+    color: white;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.content
+{
+  padding-bottom: 30px;  
+ justify-content: start;
+ align-content: center;
+
+}
+.quotas
+{
+    text-transform: uppercase;
+    font-size: small;
+}
+.info
+{
+    font-size: 40px;
+    
+}
+.info1
+{
+    font-size: small;
+}
+.color
+{
+    color: #7DFC00 !important;
+   
+}
+.btn1
+{
+    background-color: #7DFC00 !important;
+    border: 3px solid #7DFC00 !important;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: white;
+    border-width: 10px !important;
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 180px;
+}
+.img1
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 425px) {
+    .img1{
+        display: none;
+    }
+}

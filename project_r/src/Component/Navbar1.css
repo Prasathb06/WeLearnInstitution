@@ -1,0 +1,211 @@
+::selection {
+    background-color: green;
+    color: white;
+}
+
+.nav {
+    position: sticky;
+    background-image: url("..//images/Backgroundimg/full-stack-developer-freelance-projects.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.BrandName {
+    color: white !important;
+    font-weight: 500 ;
+    font-size: 30px !important;
+    
+}
+
+.BrandName::first-letter {
+    color: #7DFC00 !important;
+    font-size: 40px;
+}
+
+.letter {
+    color: #7DFC00 !important;
+    font-size: 40px;
+}
+
+.container-xxl .nav .Toggler {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+}
+
+.nav .Toggler {
+    border: 1px solid white !important;
+}
+
+.Toggler:hover {
+    color: #7DFC00 !important;
+    border-bottom: 2px solid;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+}
+
+.nav1{
+    display: flex !important;
+    align-items: center;
+    justify-items: center;
+    /* column-gap: 10px; */
+}
+
+
+.Home {
+    color: white !important;
+    /* padding-right: 5%; */
+    /* margin-top: 20px; */
+
+}
+
+.Home:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+.Link1 {
+    color: white !important;
+    /* padding-right: 5%;
+    margin-top: 20px; */
+
+}
+
+.Link1:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+.Link2 {
+    color: white !important;
+    /* padding-right: 18px; */
+    background: none !important;
+    border: none !important;
+    /* margin-top: 20px !important; */
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+.Link2:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+.Link3 {
+    color: white !important;
+    /* padding-right: 5%;
+    margin-top: 20px; */
+
+}
+
+.Link3:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+.Icon {
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.Login {
+    color: white !important;
+    padding-right: 5%;
+    
+
+}
+
+.Login:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+.btn-logout {
+    color: white !important;
+    font-size: 17px;
+    font-weight: 900;
+    border: none;
+    background-color: #191E1A;
+  }
+  
+  .btn-logout:hover {
+    color: red!important;
+    border-radius: 20px;
+    transition: .2s;
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid red !important;
+  }
+
+
+.Register {
+    color: white !important;
+    /* padding-left: 18px; */
+    font-size: 17px;
+    font-weight: 900;
+ 
+
+}
+
+.Register:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+.search {
+    height: 25px;
+    width: 25px;
+    color: white !important;
+    
+
+}
+
+.search:hover {
+    color: #7DFC00 !important;
+    border-radius: 20px;
+    /* transition: .2s; */
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid #7DFC00 !important;
+    /* transform: scale(1.1); */
+}
+
+@media screen and (max-width:425px) {
+    .BrandName{
+        font-size: 20px !important;
+    }
+}
