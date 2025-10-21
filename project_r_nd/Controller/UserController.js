@@ -44,7 +44,7 @@ exports.login = [
                   message : "Login Success"
                });
             } else {
-               res.send({userFund : false,
+               res.send({userFound : false,
                   message : "password does not match"
                });
             }
@@ -55,7 +55,7 @@ exports.login = [
          }
       }) 
       .catch((error) => {
-         res.send(error)
+         res.send(error.message)
       })
    }
 ]   
@@ -123,3 +123,4 @@ exports.delete = (req, res) => {
       res.status(500).json({ success: false, message: 'An error occurred', error: err });
     });
 };
+
