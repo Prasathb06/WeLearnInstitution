@@ -30,9 +30,9 @@ const LoginPage = () => {
     setLoading(true); // Set loading to true
 
     try {
-      const result = await axios.post("http://localhost:4000/user/login", { email, password });
+      const result = await axios.post("${process.env.REACT_APP_BACKEND_URL}/user/login", { email, password });
       setLoading(false); // Set loading to false
-      if (result.data.userFound) { 
+      if (result.data.userFound) {
         alert("Login Successfully");
         navigate("/");
       } else {
@@ -57,7 +57,7 @@ const LoginPage = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         /><br />
-        {errors.email && <div style={{ color: "red", margintop:"0px" }}>{errors.email}</div>}
+        {errors.email && <div style={{ color: "red", margintop: "0px" }}>{errors.email}</div>}
         <input
           className='pass1'
           type='password'

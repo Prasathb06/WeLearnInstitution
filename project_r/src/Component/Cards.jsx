@@ -14,7 +14,7 @@ const Cards = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/product/list');
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/product/list`);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
@@ -44,7 +44,7 @@ const Cards = () => {
         <Card key={product._id} className="product-card">
           <Card.Img
             variant="top"
-            src={`http://localhost:4000/${product.productimage[0]}`}
+            src={`${process.env.REACT_APP_BACKEND_URL}/${product.productimage[0]}`}
             alt={product.productname}
           />
           <Card.Body>
@@ -57,8 +57,8 @@ const Cards = () => {
               <p className="price-current">
                 <LiaRupeeSignSolid /> {product.productprice}
               </p>
-              <div style={{display:"flex"}}>
-              <button onClick={() => handleBuyNow(product.productname)}>Buy Now</button>
+              <div style={{ display: "flex" }}>
+                <button onClick={() => handleBuyNow(product.productname)}>Buy Now</button>
                 {/* <button>Add to Cart</button> */}
               </div>
             </Card.Text>

@@ -52,7 +52,7 @@ const RegisterPage = () => {
       return;
     }
 
-    axios.post("http://localhost:4000/user/register", { username, email, contact, password })
+    axios.post("${process.env.REACT_APP_BACKEND_URL}/user/register", { username, email, contact, password })
       .then(result => {
         if (result.status === 201) {
           alert("Registered successfully");
@@ -81,7 +81,7 @@ const RegisterPage = () => {
             value={username}
             onChange={(e) => setName(e.target.value)}
           /><br />
-          {errors.username && <div style={{color: "red"}}>{errors.username}</div>}
+          {errors.username && <div style={{ color: "red" }}>{errors.username}</div>}
         </div>
         <div className='input-group'>
           <input
@@ -92,7 +92,7 @@ const RegisterPage = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           /><br />
-          {errors.email && <div style={{color: "red"}}>{errors.email}</div>}
+          {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
         </div>
         <div className='input-group'>
           <input
@@ -103,7 +103,7 @@ const RegisterPage = () => {
             value={contact}
             onChange={(e) => setContact(e.target.value)}
           /><br />
-          {errors.contact && <div style={{color: "red"}}>{errors.contact}</div>}
+          {errors.contact && <div style={{ color: "red" }}>{errors.contact}</div>}
         </div>
         <div className='input-group'>
           <input
@@ -114,7 +114,7 @@ const RegisterPage = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           /><br />
-          {errors.password && <div style={{color: "red"}}>{errors.password}</div>}
+          {errors.password && <div style={{ color: "red" }}>{errors.password}</div>}
         </div>
         <div className='input-group'>
           <input
@@ -125,9 +125,9 @@ const RegisterPage = () => {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           /><br />
-          {errors.confirmPassword && <div style={{color: "red"}}>{errors.confirmPassword}</div>}
+          {errors.confirmPassword && <div style={{ color: "red" }}>{errors.confirmPassword}</div>}
         </div>
-        <input className='btnR' type='submit' value="submit"/>
+        <input className='btnR' type='submit' value="submit" />
       </form>
     </div>
   );
