@@ -52,7 +52,7 @@ const RegisterPage = () => {
       return;
     }
 
-    axios.post("${process.env.REACT_APP_BACKEND_URL}/user/register", { username, email, contact, password })
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/register`, { username, email, contact, password })
       .then(result => {
         if (result.status === 201) {
           alert("Registered successfully");

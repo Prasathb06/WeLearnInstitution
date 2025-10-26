@@ -24,7 +24,7 @@ const ProductCreation = () => {
     }
 
     try {
-      await axios.post('http://localhost:4000/product/insert', productFormData, {
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/product/insert`, productFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

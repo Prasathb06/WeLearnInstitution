@@ -30,7 +30,7 @@ const LoginPage = () => {
     setLoading(true); // Set loading to true
 
     try {
-      const result = await axios.post("${process.env.REACT_APP_BACKEND_URL}/user/login", { email, password });
+      const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/login`, { email, password });
       setLoading(false); // Set loading to false
       if (result.data.userFound) {
         alert("Login Successfully");
