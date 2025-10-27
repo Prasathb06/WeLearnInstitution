@@ -13,7 +13,7 @@ const UserEdit = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/user/${id}`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/user/${id}`)
       .then(response => response.json())
       .then(user => {
         setUsername(user.username);

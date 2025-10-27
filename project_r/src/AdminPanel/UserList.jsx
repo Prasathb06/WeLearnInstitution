@@ -8,7 +8,7 @@ const UserList = () => {
   const [user, setUser] = useState(0)
 
   const deleteUser = (id) => {
-    fetch(`${process.env.VITE_BACKEND_URL}/user/delete/${id}`, {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/user/delete/${id}`, {
       method: "DELETE"
     })
       .then(res => res.json())
