@@ -46,9 +46,9 @@ function Navbar1() {
                  Tutorials
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="HC">HTML&CSS</Dropdown.Item>
-                <Dropdown.Item href="java">Java</Dropdown.Item>
-                <Dropdown.Item href="javascript">JavaScript</Dropdown.Item>
+                <Dropdown.Item><Link to="HC" className='nav-link  Login'>HTML&CSS</Link></Dropdown.Item>
+                <Dropdown.Item><Link to="java" className='nav-link  Login'>Java</Link></Dropdown.Item>
+                <Dropdown.Item><Link to="javascript" className='nav-link  Login'>JavaScript</Link></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>

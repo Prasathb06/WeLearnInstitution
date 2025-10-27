@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './LoginPage.css';
 
@@ -72,7 +72,7 @@ const LoginPage = () => {
           {loading ? 'Logging in...' : 'Login'}
         </button>
         <p className="reg text-black">
-          Don't have an account? <a href="./register"><b>Register</b></a>
+          Don't have an account?<Link to="/register" className='a'><b>Register</b></Link>
         </p>
       </form>
     </div>
