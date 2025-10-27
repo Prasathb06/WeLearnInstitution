@@ -24,27 +24,27 @@ import JavaScript from './Component/JavaScript';
 
 function App() {
   return (
-    <>  
-    <BrowserRouter>
-    <HideNavbar><Navbar1/>
-    </HideNavbar>
-    <Routes>
-      <Route path='/' element={<Home></Home>}/>
-      <Route path='/AdminCon' element={<AdminController></AdminController>}/>
-      {/* <Route path='/tutorial' element={<Tutorials></Tutorials>}/> */}
-      <Route path='/card' element={<Cards></Cards>}/>
-      <Route path='/HC' element={<HTMLandCSS></HTMLandCSS>}/>
-      <Route path='/java' element={<Java></Java>}/>
-      <Route path='/javascript' element={<JavaScript></JavaScript>}/>
-      <Route path='/Admin' element={<Login></Login>}/>
-      <Route path='/Uedit' element={<UserEdit></UserEdit>}/>
-      <Route path="/login" element={<LoginPage></LoginPage>}/>
-      <Route path='/register' element={<RegisterPage></RegisterPage>}/>
-    </Routes>
-    </BrowserRouter>
-    <Footer></Footer>
-   </>
-    
+    <>
+      <BrowserRouter>
+        <HideNavbar><Navbar1 />
+        </HideNavbar>
+        <Routes>
+          <Route path='/' element={<Home></Home>} />
+          <Route path='/AdminCon' element={<AdminController></AdminController>} />
+          {/* <Route path='/tutorial' element={<Tutorials></Tutorials>}/> */}
+          <Route path='/card' element={<Cards></Cards>} />
+          <Route path='/HC' element={<HTMLandCSS></HTMLandCSS>} />
+          <Route path='/java' element={<Java></Java>} />
+          <Route path='/javascript' element={<JavaScript></JavaScript>} />
+          <Route path='/Admin' element={<Login></Login>} />
+          <Route path='/Uedit' element={<UserEdit></UserEdit>} />
+          <Route path="/login" element={<LoginPage></LoginPage>} />
+          <Route path='/register' element={<RegisterPage></RegisterPage>} />
+        </Routes>
+      </BrowserRouter>
+      <Footer></Footer>
+    </>
+
   )
 }
 

@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './LoginPage.css'; // Ensure your CSS file is correctly imported
+import './LoginPage.css';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -27,11 +27,11 @@ const LoginPage = () => {
       return;
     }
 
-    setLoading(true); // Set loading to true
+    setLoading(true);
 
     try {
-      const result = await axios.post(`${process.env.VITE_BACKEND_URL}/user/login`, { email, password });
-      setLoading(false); // Set loading to false
+      const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/user/login`, { email, password });
+      setLoading(false);
       if (result.data.userFound) {
         alert("Login Successfully");
         navigate("/");
@@ -39,7 +39,7 @@ const LoginPage = () => {
         setErrors({ login: "Invalid email or password" });
       }
     } catch (err) {
-      setLoading(false); // Set loading to false
+      setLoading(false);
       console.error(err);
       setErrors({ login: "Login Failed" });
     }

@@ -62,7 +62,7 @@ const UserEdit = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`${process.env.VITE_BACKEND_URL}/user/update/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/user/update/${id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

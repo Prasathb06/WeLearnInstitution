@@ -26,7 +26,7 @@ const UserList = () => {
   };
 
   useEffect(() => {
-    fetch(`${process.env.VITE_BACKEND_URL}/user/list`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/user/list`)
 
       .then(res => res.json())
       .then((data) => {

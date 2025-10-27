@@ -2,14 +2,15 @@ import React from 'react';
 import ProductCreation from './ProductCreation';
 import UserList from './UserList';
 import CardsList from './CardsList';
-// import UserEdit from './UserEdit'
+
 
 const AdminController = () => {
   return (
     <>
-    <ProductCreation></ProductCreation>
-    <UserList></UserList>
-    <CardsList></CardsList>
+     <h1 style={{ color: "white" }}>Admin Dashboard</h1>
+      <ProductCreation></ProductCreation>
+      {/* <UserList></UserList>
+      <CardsList></CardsList> */}
     </>
   )
 }

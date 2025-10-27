@@ -5,7 +5,7 @@ const CardsList = () => {
   const [products, setProducts] = useState([]);
 
   const deleteProduct = (id) => {
-    fetch(`${process.env.VITE_BACKEND_URL}/product/delete/${id}`, {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/product/delete/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
@@ -22,7 +22,7 @@ const CardsList = () => {
   };
 
   useEffect(() => {
-    fetch(`${process.env.VITE_BACKEND_URL}/product/list`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/product/list`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -53,7 +53,7 @@ const CardsList = () => {
                 <td>{product.productname}</td>
                 <td>{product.productprice}</td>
                 <td>
-                  <img src={`http://localhost:4000/${product.productimage[0]}`} alt={product.productname} width="50" />
+                  <img src={`${import.meta.env.VITE_BACKEND_URL}/${product.productimage[0]}`} alt={product.productname} width="50" />
                 </td>
                 <td>
                   <input

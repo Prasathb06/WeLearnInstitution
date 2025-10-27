@@ -24,7 +24,7 @@ const ProductCreation = () => {
     }
 
     try {
-      await axios.post(`${process.env.VITE_BACKEND_URL}/product/insert`, productFormData, {
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/product/insert`, productFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
