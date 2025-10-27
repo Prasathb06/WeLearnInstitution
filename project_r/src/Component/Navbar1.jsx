@@ -29,7 +29,7 @@ function Navbar1() {
           >
             <div className='nav1'></div>
             <div className=''><Link to="/" className='nav-link  Home'>Home</Link></div>
-            <Nav.Link  className='Link1' href="card">Courses</Nav.Link>
+            <div className=''><Link to="card" className='nav-link  Login'>Course</Link></div>
             {/* <NavDropdown className='Link2' title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
