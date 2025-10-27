@@ -9,8 +9,8 @@ const AdminController = () => {
     <>
      <h1 style={{ color: "white" }}>Admin Dashboard</h1>
       <ProductCreation></ProductCreation>
-      {/* <UserList></UserList>
-      <CardsList></CardsList> */}
+      <UserList></UserList>
+      <CardsList></CardsList>
     </>
   )
 }

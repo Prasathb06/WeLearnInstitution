@@ -5,13 +5,17 @@ const CardsList = () => {
   const [products, setProducts] = useState([]);
 
   const deleteProduct = (id) => {
-    fetch(`${import.meta.env.VITE_BACKEND_URL}/product/delete/${id}`, {
+    const cleanId = id.trim(); // 🧽 remove newline or spaces
+    console.log("Deleting product with ID:", cleanId); // 🔍 check actual ID
+
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/product/delete/${cleanId}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
           setProducts(products.filter((product) => product._id !== id));
+          alert("Product deleted successfully");
         } else {
           console.error('Failed to delete the product');
         }
@@ -20,6 +24,7 @@ const CardsList = () => {
         console.error('Error:', err);
       });
   };
+
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}/product/list`)
