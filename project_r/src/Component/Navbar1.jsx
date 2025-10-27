@@ -29,7 +29,7 @@ function Navbar1() {
           >
             <div className='nav1'></div>
             <div className=''><Link to="/" className='nav-link  Home'>Home</Link></div>
-            <div className=''><Link to="card" className='nav-link  Login'>Course</Link></div>
+            <div className=''><Link to="/card" className='nav-link  Login'>Course</Link></div>
             {/* <NavDropdown className='Link2' title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -46,9 +46,9 @@ function Navbar1() {
                  Tutorials
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item><Link to="HC" className='nav-link  Login'>HTML&CSS</Link></Dropdown.Item>
-                <Dropdown.Item><Link to="java" className='nav-link  Login'>Java</Link></Dropdown.Item>
-                <Dropdown.Item><Link to="javascript" className='nav-link  Login'>JavaScript</Link></Dropdown.Item>
+                <Dropdown.Item><Link to="/HC" className='nav-link'>HTML&CSS</Link></Dropdown.Item>
+                <Dropdown.Item><Link to="/java" className='nav-link'>Java</Link></Dropdown.Item>
+                <Dropdown.Item><Link to="/javascript" className='nav-link'>JavaScript</Link></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>
@@ -61,8 +61,8 @@ function Navbar1() {
             />
             <Button variant="outline-success">Search</Button> */}
             {/* <Nav.Link className='Login' href="./login">Login</Nav.Link> */}
-            <div className=''><Link to="login" className='nav-link  Login'>Login</Link></div>
-            <div className=''><Link to="register" className='nav-link Register'>Register</Link></div>
+            <div className=''><Link to="/login" className='nav-link  Login'>Login</Link></div>
+            <div className=''><Link to="/register" className='nav-link Register'>Register</Link></div>
             {/* <Nav.Link className='Register' href="./register">Register Now</Nav.Link> */}
            <div><button className='btn-logout' onClick={handleLogout}>Logout</button></div> 
             <FaSearch className='search' /> 
