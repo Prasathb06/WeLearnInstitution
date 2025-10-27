@@ -14,7 +14,7 @@ const Cards = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/product/list`);
+        const response = await axios.get(`${process.env.VITE_BACKEND_URL}/product/list`);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
@@ -44,7 +44,7 @@ const Cards = () => {
         <Card key={product._id} className="product-card">
           <Card.Img
             variant="top"
-            src={`${process.env.REACT_APP_BACKEND_URL}/${product.productimage[0]}`}
+            src={`${process.env.VITE_BACKEND_URL}/${product.productimage[0]}`}
             alt={product.productname}
           />
           <Card.Body>

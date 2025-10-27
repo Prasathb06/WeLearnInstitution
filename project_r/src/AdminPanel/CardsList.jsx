@@ -5,7 +5,7 @@ const CardsList = () => {
   const [products, setProducts] = useState([]);
 
   const deleteProduct = (id) => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/product/delete/${id}`, {
+    fetch(`${process.env.VITE_BACKEND_URL}/product/delete/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
@@ -22,7 +22,7 @@ const CardsList = () => {
   };
 
   useEffect(() => {
-    fetch('http://localhost:4000/product/list')
+    fetch(`${process.env.VITE_BACKEND_URL}/product/list`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

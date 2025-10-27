@@ -8,7 +8,7 @@ const UserList = () => {
   const [user, setUser] = useState(0)
 
   const deleteUser = (id) => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/user/delete/${id}`, {
+    fetch(`${process.env.VITE_BACKEND_URL}/user/delete/${id}`, {
       method: "DELETE"
     })
       .then(res => res.json())
@@ -26,7 +26,7 @@ const UserList = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:4000/user/list")
+    fetch(`${process.env.VITE_BACKEND_URL}/user/list`)
 
       .then(res => res.json())
       .then((data) => {
