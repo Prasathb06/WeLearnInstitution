@@ -50,10 +50,10 @@ const Cards = () => {
           <Card.Body>
             <Card.Title>{product.productname}</Card.Title>
             <Card.Text>
-              <p className="discount">{product.productdiscount}% off</p>
               <p className="price-dis">
-                <LiaRupeeSignSolid /> {product.productdis}
+                {product.productdis}
               </p>
+              <p className="discount">{product.productdiscount}% off</p>
               <p className="price-current">
                 <LiaRupeeSignSolid /> {product.productprice}
               </p>

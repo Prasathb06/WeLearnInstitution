@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import "./CnavBar.css";
+import { Link } from 'react-router-dom';
 
 const CnavBar = () => {
   return (
@@ -10,7 +11,7 @@ const CnavBar = () => {
           <Nav.Link eventKey=""><Link to="/javascript" className='nav-link'>HTML & CSS</Link></Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2">JavaScript<Link to="/javascript" className='nav-link'>JavaScript</Link></Nav.Link>
+          <Nav.Link eventKey="link-2"><Link to="/javascript" className='nav-link'>JavaScript</Link></Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-3"><Link to="/java" className='nav-link'>Java</Link></Nav.Link>

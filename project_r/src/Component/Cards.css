@@ -49,7 +49,7 @@
 
 
 .product-card .price-dis {
-  text-decoration: line-through; 
+  /* text-decoration: line-through;  */
   color: #777; 
   margin-bottom: 5px;
 }
